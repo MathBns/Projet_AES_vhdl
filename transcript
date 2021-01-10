@@ -1,0 +1,143 @@
+vsim BENCH.aes_tb
+# vsim BENCH.aes_tb 
+# Start time: 22:17:57 on Jan 10,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading packages.crypt_pack(body)
+# Loading BENCH.aes_tb(aes_tb_arch)
+# Loading rtl.aes(aes_arch)
+# Loading rtl.keyexpansion_i_o(keyexpansion_i_o_arch)
+# Loading rtl.counter(counter_arch)
+# Loading rtl.keyexpansion_fsm(keyexpansion_fsm_moore_arch)
+# Loading rtl.keyexpander(keyexpander_arch)
+# Loading rtl.sbox(sbox_arch)
+# Loading rtl.fsm_aes(fsm_aes_moore_arch)
+# Loading rtl.aesround(aesround_arch)
+# Loading rtl.addroundkey(addroundkey_arch)
+# Loading rtl.subbytes(subbytes_arch)
+# Loading rtl.shiftrows(shiftrows_arch)
+# Loading rtl.mixcolumns(mixcolumns_arch)
+# Loading rtl.multimat(multimat_arch)
+add wave -position end  sim:/aes_tb/aes_on_os
+add wave -position end  sim:/aes_tb/clock_is
+add wave -position end  sim:/aes_tb/data_is
+add wave -position end  sim:/aes_tb/data_os
+add wave -position end  sim:/aes_tb/key_is
+add wave -position end  sim:/aes_tb/reset_is
+add wave -position end  sim:/aes_tb/start_is
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(3)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(2)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(1)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(0)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp
+add wave -position end  sim:/aes_tb/DUT/key_exp/UCounter/counter_s
+run
+add wave -position end  sim:/aes_tb/DUT/outputKeyExpander_s
+add wave -position end  sim:/aes_tb/DUT/counter_aes_s
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/aes_tb/DUT/clock_i
+add wave -position end  sim:/aes_tb/DUT/counter_aes_s
+add wave -position end  sim:/aes_tb/DUT/data_i
+add wave -position end  sim:/aes_tb/DUT/data_o
+add wave -position end  sim:/aes_tb/DUT/data_s
+add wave -position end  sim:/aes_tb/DUT/enable_counter_aes_s
+add wave -position end  sim:/aes_tb/DUT/enableRoundcomputing_s
+add wave -position end  sim:/aes_tb/DUT/key_i
+add wave -position end  sim:/aes_tb/DUT/outputKeyExpander_s
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(3)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(2)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(1)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(3)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(2)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(1)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/aes/PSubBytes/G1(0)/G2(0)/inter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(3)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(2)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(1)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp/UKeyExp/U2(0)/U2x
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tb/DUT/key_exp
+add wave -position end  sim:/aes_tb/start_is
+add wave -position end  sim:/aes_tb/reset_is
+add wave -position end  sim:/aes_tb/aes_on_os
+add wave -position end  sim:/aes_tb/DUT/data_s
+# End time: 22:52:16 on Jan 10,2021, Elapsed time: 0:34:19
+# Errors: 0, Warnings: 21

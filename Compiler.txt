@@ -1,0 +1,116 @@
+echo "The AES Project in VHDL"
+echo " "
+echo "RESET COMMAND"
+
+vdel -lib LIB/RTL -all
+vdel -lib LIB/PACKAGES -all
+vdel -lib LIB/BENCH -all
+
+vlib ./LIB/RTL
+vmap RTL ./LIB/RTL
+
+vlib ./LIB/PACKAGES
+vmap PACKAGES ./LIB/PACKAGES
+
+vlib ./LIB/BENCH
+vmap BENCH ./LIB/BENCH
+
+echo " "
+echo "COMPILATION OF THIRDPARTY LIBRARY"
+vcom -work PACKAGES ./SRC/THIRDPARTY/CryptPack.vhd
+
+echo " "
+echo "COMPILATION OF SBOX"
+vcom -work RTL ./SRC/RTL/SBox.vhd
+
+echo " "
+echo "COMPILATION OF SBOX TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/SBox_tb.vhd
+
+echo " "
+echo "COMPILATION OF SUBBYTES"
+vcom -work RTL ./SRC/RTL/SubBytes.vhd
+
+echo " "
+echo "COMPILATION OF SUBBYTES TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/SubBytes_tb.vhd
+
+echo " "
+echo "COMPILATION OF ADDROUNDKEY"
+vcom -work RTL ./SRC/RTL/AddRoundKey.vhd
+
+echo " "
+echo "COMPILATION OF ADDROUNDKEY TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/AddRoundKey_tb.vhd
+
+echo " "
+echo "COMPILATION OF SHIFTROWS"
+vcom -work RTL ./SRC/RTL/ShiftRows.vhd
+
+echo " "
+echo "COMPILATION OF SHIFTROWS TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/ShiftRows_tb.vhd
+
+echo " "
+echo "COMPILATION OF MULTIMAT"
+vcom -work RTL ./SRC/RTL/MultiMat.vhd
+
+echo " "
+echo "COMPILATION OF MULTIMAT TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/MultiMat_tb.vhd
+
+echo " "
+echo "COMPILATION OF MIXCOLUMNS"
+vcom -work RTL ./SRC/RTL/MixColumns.vhd
+
+echo " "
+echo "COMPILATION OF MIXCOLUMNS TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/MixColumns_tb.vhd
+
+echo " "
+echo "COMPILATION OF AESROUND"
+vcom -work RTL ./SRC/RTL/AESRound.vhd
+
+echo " "
+echo "COMPILATION OF AESROUND TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/AESRound_tb.vhd
+
+echo " "
+echo "COMPILATION OF KEYEXPANDER"
+vcom -work RTL ./SRC/RTL/KeyExpander.vhd
+
+echo " "
+echo "COMPILATION OF KEYEXPANDER TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/KeyExpander_tb.vhd
+
+echo " "
+echo "COMPILATION OF KEYEXPANSION_FSM"
+vcom -work RTL ./SRC/RTL/KeyExpansion_FSM.vhd
+
+echo " "
+echo "COMPILATION OF KEYEXPANSION_FSM TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/KeyExpansion_FSM_tb.vhd
+
+echo " "
+echo "COMPILATION OF COUNTER"
+vcom -work RTL ./SRC/RTL/Counter.vhd
+
+echo " "
+echo "COMPILATION OF KEYEXPANSION_I_O"
+vcom -work RTL ./SRC/RTL/KeyExpansion_I_O.vhd
+
+echo " "
+echo "COMPILATION OF KEYEXPANSION_I_O TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/KeyExpansion_I_O_tb.vhd
+
+echo " "
+echo "COMPILATION OF FSM_AES"
+vcom -work RTL ./SRC/RTL/FSM_AES.vhd
+
+echo " "
+echo "COMPILATION OF AES"
+vcom -work RTL ./SRC/RTL/AES.vhd
+
+echo " "
+echo "COMPILATION OF AES TESTBENCH"
+vcom -work BENCH ./SRC/BENCH/AES_tb.vhd
